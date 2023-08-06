@@ -2,7 +2,7 @@
 
 import 'package:flutter/material.dart';
 
-import '../home_screen.dart';
+import '../home/home_screen.dart';
 
 class LoadingScreenMobile extends StatefulWidget {
   const LoadingScreenMobile({super.key});

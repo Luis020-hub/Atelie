@@ -2,7 +2,7 @@
 
 import 'package:flutter/material.dart';
 
-import '../home_screen.dart';
+import '../home/home_screen.dart';
 
 class LoadingScreenWeb extends StatefulWidget {
   const LoadingScreenWeb({super.key});
