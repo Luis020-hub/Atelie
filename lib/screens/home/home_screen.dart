@@ -1,6 +1,7 @@
 // ignore_for_file: file_names
 
 import 'package:fama/screens/home/widgets/mobile_appbar.dart';
+import 'package:fama/screens/home/widgets/mobile_sidebar.dart';
 import 'package:fama/screens/home/widgets/web_appbar.dart';
 import 'package:flutter/material.dart';
 
@@ -23,8 +24,9 @@ class HomeScreen extends StatelessWidget {
                   preferredSize: Size(double.infinity, 56),
                   child: WebAppBar(),
                 ),
-          drawer:
-              constraints.minWidth < mobileBreakPoint ? const Drawer() : null,
+          drawer: constraints.minWidth < mobileBreakPoint
+              ? const Drawer(child: MobileSideBar())
+              : null,
           body: Align(
             alignment: Alignment.topCenter,
             child: ConstrainedBox(
