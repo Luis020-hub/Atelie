@@ -37,10 +37,15 @@ class HomeScreen extends StatelessWidget {
               constraints: const BoxConstraints(),
               child: ListView(
                 children: const [
+                  SizedBox(height: 6),
                   Horarios(),
+                  SizedBox(height: 6),
                   Equipe(),
+                  SizedBox(height: 6),
                   Servicos(),
+                  SizedBox(height: 6),
                   ComoChegar(),
+                  SizedBox(height: 6),
                 ],
               ),
             ),

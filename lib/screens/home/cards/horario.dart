@@ -5,31 +5,51 @@ class Horarios extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Center(
+    return const Center(
       child: Card(
         child: Column(
-          mainAxisSize: MainAxisSize.min,
           children: <Widget>[
-            const ListTile(
-              leading: Icon(Icons.album),
-              title: Text('The Enchanted Nightingale'),
-              subtitle: Text('Music by Julie Gable. Lyrics by Sidney Stein.'),
-            ),
             Row(
-              mainAxisAlignment: MainAxisAlignment.end,
-              children: <Widget>[
-                TextButton(
-                  child: const Text('BUY TICKETS'),
-                  onPressed: () {/* ... */},
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                Text(
+                  'Horários',
+                  style: TextStyle(fontSize: 30, fontWeight: FontWeight.w600),
                 ),
-                const SizedBox(width: 8),
-                TextButton(
-                  child: const Text('LISTEN'),
-                  onPressed: () {/* ... */},
-                ),
-                const SizedBox(width: 8),
+                SizedBox(width: 10),
+                Icon(Icons.schedule, size: 36),
               ],
             ),
+            SizedBox(height: 10),
+            SizedBox(
+                width: 1000,
+                child: Column(
+                  children: [
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
+                        Text(('De segunda a quinta: '),
+                            style: TextStyle(
+                                fontSize: 18, fontWeight: FontWeight.bold)),
+                        Text(('08h ás 17h'), style: TextStyle(fontSize: 18)),
+                      ],
+                    ),
+                    SizedBox(height: 2),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
+                        Text(('Sexta: '),
+                            style: TextStyle(
+                                fontSize: 18, fontWeight: FontWeight.bold)),
+                        Text(('08h ás 16h'), style: TextStyle(fontSize: 18)),
+                      ],
+                    ),
+                    SizedBox(width: 10),
+                  ],
+                )),
           ],
         ),
       ),
