@@ -1,38 +1,22 @@
 import 'package:flutter/material.dart';
 
+import '../../items/equipe_item.dart';
+
 class Equipe extends StatelessWidget {
   const Equipe({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Center(
-      child: Card(
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          children: <Widget>[
-            const ListTile(
-              leading: Icon(Icons.album),
-              title: Text('The Enchanted Nightingale'),
-              subtitle: Text('Music by Julie Gable. Lyrics by Sidney Stein.'),
-            ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.end,
-              children: <Widget>[
-                TextButton(
-                  child: const Text('BUY TICKETS'),
-                  onPressed: () {/* ... */},
-                ),
-                const SizedBox(width: 8),
-                TextButton(
-                  child: const Text('LISTEN'),
-                  onPressed: () {/* ... */},
-                ),
-                const SizedBox(width: 8),
-              ],
-            ),
-          ],
+    return const Column(
+      children: [
+        Center(
+          child: Text(
+            "Equipe",
+            style: TextStyle(fontSize: 30, fontWeight: FontWeight.w600),
+          ),
         ),
-      ),
+        EquipeItem(),
+      ],
     );
   }
 }

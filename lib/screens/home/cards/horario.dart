@@ -17,8 +17,6 @@ class Horarios extends StatelessWidget {
                   'Horários',
                   style: TextStyle(fontSize: 30, fontWeight: FontWeight.w600),
                 ),
-                SizedBox(width: 10),
-                Icon(Icons.schedule, size: 36),
               ],
             ),
             SizedBox(height: 10),

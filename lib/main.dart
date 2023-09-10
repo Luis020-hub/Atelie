@@ -1,5 +1,5 @@
 import 'package:animated_splash_screen/animated_splash_screen.dart';
-import 'package:fama/screens/home/home_screen.dart';
+import 'package:fama/screens/home/HomeScreen.dart';
 import 'package:fama/screens/loading/loading_screen_mobile.dart';
 import 'package:fama/screens/loading/loading_screen_web.dart';
 import 'package:flutter/material.dart';

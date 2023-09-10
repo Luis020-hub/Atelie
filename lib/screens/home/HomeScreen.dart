@@ -39,7 +39,7 @@ class HomeScreen extends StatelessWidget {
                 children: const [
                   SizedBox(height: 6),
                   Horarios(),
-                  SizedBox(height: 6),
+                  SizedBox(height: 6), 
                   Equipe(),
                   SizedBox(height: 6),
                   Servicos(),

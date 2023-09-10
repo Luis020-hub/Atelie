@@ -2,7 +2,7 @@
 
 import 'package:flutter/material.dart';
 
-import '../home/home_screen.dart';
+import '../home/HomeScreen.dart';
 
 class LoadingScreenMobile extends StatefulWidget {
   const LoadingScreenMobile({super.key});
@@ -27,20 +27,21 @@ class _LoadingScreenMobileState extends State<LoadingScreenMobile> {
   @override
   Widget build(BuildContext context) {
     return LayoutBuilder(
-        builder: (BuildContext context, BoxConstraints constraints) {
-      return const Center(
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Image(
-              image: AssetImage("lib/images/logo.png"),
-              fit: BoxFit.cover,
-              width: 300,
-              height: 300,
-            ),
-          ],
-        ),
-      );
-    });
+      builder: (BuildContext context, BoxConstraints constraints) {
+        return const Center(
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Image(
+                image: AssetImage("lib/images/logo.png"),
+                fit: BoxFit.cover,
+                width: 300,
+                height: 300,
+              ),
+            ],
+          ),
+        );
+      },
+    );
   }
 }
