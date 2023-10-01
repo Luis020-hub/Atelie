@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 
 import '../../items/equipe_item.dart';
 
-class Equipe extends StatelessWidget {
-  const Equipe({super.key});
+class Team extends StatelessWidget {
+  const Team({super.key});
 
   @override
   Widget build(BuildContext context) {

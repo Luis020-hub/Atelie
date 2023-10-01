@@ -1,9 +1,9 @@
 // ignore_for_file: file_names
 
-import 'package:fama/screens/home/cards/como_chegar.dart';
-import 'package:fama/screens/home/cards/equipe.dart';
-import 'package:fama/screens/home/cards/horario.dart';
-import 'package:fama/screens/home/cards/servicos.dart';
+import 'package:fama/screens/home/cards/location.dart';
+import 'package:fama/screens/home/cards/team.dart';
+import 'package:fama/screens/home/cards/horary.dart';
+import 'package:fama/screens/home/cards/services.dart';
 import 'package:fama/screens/home/widgets/mobile_appbar.dart';
 import 'package:fama/screens/home/widgets/mobile_drawer.dart';
 import 'package:fama/screens/home/widgets/web_appbar.dart';
@@ -38,13 +38,13 @@ class HomeScreen extends StatelessWidget {
               child: ListView(
                 children: const [
                   SizedBox(height: 6),
-                  Horarios(),
+                  Horary(),
                   SizedBox(height: 6), 
-                  Equipe(),
+                  Team(),
                   SizedBox(height: 6),
-                  Servicos(),
+                  Services(),
                   SizedBox(height: 6),
-                  ComoChegar(),
+                  Location(),
                   SizedBox(height: 6),
                 ],
               ),

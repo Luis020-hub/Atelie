@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class Horarios extends StatelessWidget {
-  const Horarios({super.key});
+class Horary extends StatelessWidget {
+  const Horary({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -48,6 +48,7 @@ class Horarios extends StatelessWidget {
                     SizedBox(width: 10),
                   ],
                 )),
+            SizedBox(height: 10),
           ],
         ),
       ),
